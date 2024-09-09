@@ -1,0 +1,40 @@
+@import '../../../../../styles/globals.module.scss';
+
+.resultsBox {
+    border-top: 4px solid $lime;
+    width: 100%;
+    border-radius: 8px;
+    padding: $spacing-200;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    gap: $spacing-200;
+    background: rgba(0, 0, 0, 0.25);
+
+    .box {
+        display: flex;
+        flex-direction: column;
+        gap: $spacing-100;
+    }
+
+    .header {
+        @extend .text-preset-4;
+        color: $slate-300;
+    }
+
+    .limeText {
+        @extend .text-preset-1;
+        color: $lime;
+    }
+
+    .whiteText {
+        @extend .text-preset-2;
+        color: $white;
+    }
+
+    .divider {
+        height: 1px;
+        align-self: stretch;
+        background: rgba(154, 190, 213, 0.25);
+    }
+}

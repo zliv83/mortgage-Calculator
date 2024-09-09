@@ -1,0 +1,14 @@
+@import '../../../../styles/globals.module.scss';
+
+.titleBar {
+    display: flex;
+    flex-direction: column;
+    gap: $spacing-100;
+    width: 100%;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.title {
+    @extend .text-preset-2
+}

@@ -1,0 +1,45 @@
+@import '../../styles/globals.module.scss';
+
+.container {
+    height: 48px;
+    width: 100%;
+    border: 1px solid $slate-700;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    transition: border-color 0.5s ease, background-color 0.5s ease;
+    cursor: pointer;
+
+    &:hover {
+        border-color: $lime
+    }
+
+    &.selected {
+        background-color: mix($lime, $white, 15%);
+        border-color: $lime;
+    }
+}
+
+.button {
+    height: 24px;
+    width: 24px;
+    border: 2px solid $slate-700;
+    border-radius: 50%;
+    margin-left: $spacing-200;
+    margin-right: $spacing-200;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.innerCircle {
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    background-color: $lime;
+}
+
+.label {
+    @extend .text-preset-3;
+    color: $slate-900
+}

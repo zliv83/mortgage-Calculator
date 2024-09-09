@@ -1,0 +1,11 @@
+@import '../../../../styles/globals.module.scss';
+
+.gap {
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    gap: $spacing-300
+}

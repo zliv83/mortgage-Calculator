@@ -1,0 +1,106 @@
+@import '../../styles/globals.module.scss';
+
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: $spacing-150;
+    box-sizing: border-box;
+    cursor: pointer;
+
+    .title {
+        @extend .text-preset-4;
+        color: $slate-700;
+    }
+}
+
+.inputContainer {
+    display: flex;
+    border: 1px solid $slate-500;
+    height: 48px;
+    width: 100%;
+    border-radius: 4px;
+    transition: border-color 0.5s;
+
+    &.prefix-right {
+        flex-direction: row-reverse;
+    }
+
+
+    &:hover {
+        border-color: $slate-900;
+    }
+
+    &:focus-within {
+        border-color: $lime; /* Change border color when the component is active */
+
+        .prefix {
+            background-color: $lime; /* Change background color when the component is active */
+        }
+    }
+
+    &.error {
+        border-color: $red;
+    
+        .prefix {
+        background-color: $red;
+        color: $white;
+        }
+    }
+
+
+    .prefix {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: $spacing-150 $spacing-200;
+        background-color: $slate-100;
+        transition: background-color 0.5s;
+
+        &.left {
+            border-top-left-radius: 4px;
+            border-bottom-left-radius: 4px;
+        }
+        
+        &.right {
+            border-top-right-radius: 4px;
+            border-bottom-right-radius: 4px;
+        }
+    }
+
+
+
+    .textContainer {
+        display: flex;
+        padding: 0px 16px;
+        align-items: center;
+        width: 100%;
+
+
+        .input {
+            width: 100%;
+            color: $slate-900;
+            @extend .text-preset-3;
+            border: none;
+            cursor: pointer;
+
+            &:focus {
+                outline: none;
+            }
+        }
+    }
+}
+
+.errorText {
+    height: 0;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.5s ease, height 0.5s ease;
+    @extend .text-preset-5;
+    color: $red;
+}
+
+.errorText.visible {
+    height: auto;
+    visibility: visible;
+    opacity: 1;
+}

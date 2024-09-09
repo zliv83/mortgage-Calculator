@@ -1,7 +1,8 @@
-import { Inter } from 'next/font/google';
-import styles from '../styles/globals.scss';
+import { Plus_Jakarta_Sans } from 'next/font/google';
+import styles from '../styles/globals.module.scss';
+import { GlobalStateProvider } from '@/lib/gobalStateContext';
 
-const inter = Inter({ subsets: ['latin'] });
+const font = Plus_Jakarta_Sans({ subsets: ['latin'] });
 
 export const metadata = {
   title: 'Create Next App',
@@ -11,7 +12,11 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={`${inter.className}${styles.body}`}>{children}</body>
+      <GlobalStateProvider>
+        <body className={styles.body}>
+          <main className={font.className}>{children}</main>
+        </body>
+      </GlobalStateProvider>
     </html>
   );
 }

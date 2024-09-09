@@ -1,0 +1,17 @@
+@import '../../styles/globals.module.scss';
+
+.button {
+    color: $slate-900;
+    @extend .text-preset-4;
+    background: none;
+    cursor: pointer;
+    border: none;
+    padding: 0;
+    text-decoration: underline;
+    transition: color 0.5s ease;
+
+    &:hover {
+        color: $slate-700
+    }
+
+}

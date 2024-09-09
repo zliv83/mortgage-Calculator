@@ -1,0 +1,30 @@
+@import '../../styles/globals.module.scss';
+
+.button {
+    color: $slate-900;
+    background-color: $lime;
+    border-radius: 999px;
+    border: 0;
+    padding-left: $spacing-500;
+    padding-right: $spacing-500;
+    height: 56px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.5s ease;
+    cursor: pointer;
+    width: auto;
+
+
+
+    &:hover {
+        background-color: mix($lime, $white, 50%)
+    }
+}
+
+
+.text {
+    @extend .text-preset-3;
+    padding-left: $spacing-150;
+}

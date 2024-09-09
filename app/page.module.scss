@@ -1,9 +1,10 @@
-@import '../styles/globals.scss';
+@import '../styles/globals.module.scss';
 
-.gradientText {
-    @include gradient-text(#ff7e5f, #feb47b, #86a8e7);
-    @include box-shadow(2xl, $primary-color);
-    font-size: 20rem;
-    font-weight: bold;
+.page {
+    width: 100%;
+    @include center-content;
+
+    @media (min-width: 1024px) {
+        height: 100vh;
+    }
 }
-

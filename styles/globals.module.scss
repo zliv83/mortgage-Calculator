@@ -1,0 +1,60 @@
+$lime: #D8DB2F;
+$slate-900: #133041;
+$slate-700: #4E6E7E;
+$slate-500: #6B94A8;
+$slate-300: #9ABED5;
+$slate-100: #E4F4FD;
+$white: #FFFFFF;
+$red: #D73328;
+
+$spacing-500: 40px;
+$spacing-400: 32px;
+$spacing-300: 24px;
+$spacing-200: 16px;
+$spacing-150: 12px;
+$spacing-100: 8px;
+
+// Text sizes
+.text-preset-1 {
+  font-size: 56px;
+  line-height: 125%;
+  letter-spacing: -1px;
+  font-weight: 700;
+}
+.text-preset-2 {
+  font-size: 24px;
+  line-height: 125%;
+  letter-spacing: -1px;
+  font-weight: 700;
+}
+.text-preset-3 {
+  font-size: 18px;
+  line-height: 125%;
+  letter-spacing: -1px;
+  font-weight: 700;
+}
+.text-preset-4 {
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0px;
+  font-weight: 500;
+}
+.text-preset-5 {
+  font-size: 14px;
+  line-height: 150%;
+  letter-spacing: 0px;
+  font-weight: 500;
+}
+
+@mixin center-content {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  @include center-content;
+}

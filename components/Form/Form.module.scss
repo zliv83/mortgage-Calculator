@@ -1,0 +1,37 @@
+@import '../../styles/globals.module.scss';
+
+.form {
+    padding: $spacing-300;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    gap: $spacing-300;
+
+    @media (min-width: 768px) {
+        gap: 0;
+        > :first-child {
+            margin-bottom: $spacing-500;
+        }
+        > :nth-child(2) {
+            margin-bottom: $spacing-300;
+        }
+        > :nth-child(3) {
+            margin-bottom: $spacing-300;
+        }
+        > :nth-child(4) {
+            margin-bottom: $spacing-500;
+        }
+    }
+
+    > * {
+        width: 100%;
+    }
+
+
+
+    @media (min-width: 1024px) {
+        .button {
+            max-width: 65%;
+        }
+    }
+}

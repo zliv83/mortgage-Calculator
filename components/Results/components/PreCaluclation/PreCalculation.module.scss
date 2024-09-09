@@ -1,0 +1,23 @@
+@import '../../../../styles/globals.module.scss';
+
+.preCalculation {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    gap: $spacing-200;
+
+
+    .headerText{
+        @extend .text-preset-2;
+        color: $white;
+    }
+
+    .text {
+        @extend .text-preset-4;
+        color: $slate-300;
+        text-align: center;
+    }
+}

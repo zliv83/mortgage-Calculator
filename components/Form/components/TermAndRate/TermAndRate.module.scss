@@ -1,0 +1,12 @@
+@import '../../../../styles/globals.module.scss';
+
+.flex {
+    display: flex;
+    flex-direction: column;
+    gap: $spacing-300;
+
+    @media (min-width: 768px) {
+        flex-direction: row;
+        
+    }
+}

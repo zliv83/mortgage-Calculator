@@ -1,10 +1,10 @@
 import styles from './page.module.scss';
+import Card from '@/components/Card/Card';
 
 export default function Home() {
   return (
-    <>
-      <div className={styles.gradientText}>ZJ</div>
-      <div className={styles.gradientText}>Charlie</div>
-    </>
+    <div className={styles.page}>
+      <Card />
+    </div>
   );
 }

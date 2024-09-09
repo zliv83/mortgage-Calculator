@@ -1,0 +1,19 @@
+@import '../../styles/globals.module.scss';
+
+.results {
+    background-color: $slate-900;
+    padding: $spacing-500;
+    width: 100%;
+    box-sizing: border-box;
+
+    @media (min-width: 768px) {
+        border-bottom-left-radius: 24px;
+        border-bottom-right-radius: 24px;
+    }
+    
+    @media (min-width: 1024px) {
+        border-top-right-radius: 24px;
+        border-bottom-left-radius: 80px;
+        max-width: 1008px;
+    }
+}
