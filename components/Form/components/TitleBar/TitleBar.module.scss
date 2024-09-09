@@ -7,6 +7,11 @@
     width: 100%;
     justify-content: flex-start;
     align-items: flex-start;
+
+    @media (min-width: 1024px) {
+        flex-direction: row;
+        justify-content: space-between;
+    }
 }
 
 .title {
