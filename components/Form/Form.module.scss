@@ -9,6 +9,7 @@
 
     @media (min-width: 768px) {
         gap: 0;
+
         > :first-child {
             margin-bottom: $spacing-500;
         }
