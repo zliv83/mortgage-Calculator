@@ -23,8 +23,6 @@ export const GlobalStateProvider = ({ children }) => {
     interestRate: '',
   });
 
-  console.log(totalAmount);
-
   const validateInputs = () => {
     const newErrors = { ...errors };
     const newErrorTexts = { ...errorText };
