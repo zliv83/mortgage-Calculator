@@ -17,9 +17,13 @@ export default function NumberField({
 
   return (
     <div id="container" className={styles.container}>
-      <span id="title" className={styles.className}>
+      <label
+        htmlFor={`number-field-${title}`}
+        id="title"
+        className={styles.className}
+      >
         {title}
-      </span>
+      </label>
       <div
         id="input container"
         className={`${styles.inputContainer} ${hasError ? styles.error : ''} ${prefixPosition === 'right' ? styles['prefix-right'] : ''} `}
@@ -32,6 +36,7 @@ export default function NumberField({
         </div>
         <div id="text container" className={styles.textContainer}>
           <input
+            id={`number-field-${title}`} // Ensure this matches the htmlFor attribute
             className={styles.input}
             value={value}
             onChange={handleChange}
